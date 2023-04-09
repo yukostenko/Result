@@ -21,26 +21,3 @@ int PrintData(string msg)
     int line = int.Parse(Console.ReadLine() ?? "0");
     return line;
 }
-
-// Метод преобразования одномерного массива
-string[] TransArr(string[] arr)
-{
-    int len = arr.Length;
-    string[] resultArr = new string[len];
-    for (int i = 0; i < arr.Length; i++)
-    {
-        int res = 0;
-        res = arr[i].Length;
-        if (res <= 3)
-        {
-            resultArr[i] = arr[i];
-        }
-    }
-    return resultArr;
-}
-
-string[] initialArr = { "1234", "1567", "-2", "computer science"};
-Print1DArr(initialArr);
-string[] resultArr = TransArr(initialArr);
-PrintData("Преобразованный массив:");
-Print1DArr(resultArr);
