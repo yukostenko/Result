@@ -38,3 +38,9 @@ string[] TransArr(string[] arr)
     }
     return resultArr;
 }
+
+string[] initialArr = { "1234", "1567", "-2", "computer science"};
+Print1DArr(initialArr);
+string[] resultArr = TransArr(initialArr);
+PrintData("Преобразованный массив:");
+Print1DArr(resultArr);
