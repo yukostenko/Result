@@ -14,3 +14,10 @@ void Print1DArr(string[] arr)
     Console.WriteLine(arr[arr.Length - 1] + "]");
 }
 
+// Метод печати 
+int PrintData(string msg)
+{
+    Console.Write(msg);
+    int line = int.Parse(Console.ReadLine() ?? "0");
+    return line;
+}
